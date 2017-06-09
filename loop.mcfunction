@@ -1,18 +1,18 @@
 ## MAIN LOOP
 
 ## NEW AND RETURNING PLAYERS JOINING SERVER
-function parkour:player_join
+function byop:player_join
 
 ## ENABLE PLAYER BUFFS
-function parkour:buffs
+function byop:buffs
 
 
 ## PLAYER IS STUCK
-function parkour:player_stuck
+function byop:player_stuck
 
 
 ## SETUP COURSE START/END
-function parkour:course_setup
+function byop:course_setup
 
 
 ## SCORE KEEPING
@@ -20,8 +20,8 @@ execute @a ~ ~ ~ detect ~ ~-1 ~ minecraft:barrier 0 /scoreboard players add @a[c
 
 
 ## CONTROL PLAYER CHECKPOINTS
-function parkour:player_checkpoint
+function byop:player_checkpoint
 
 
 ## CONGRATULATE PLAYER
-function parkour:winner
+function byop:winner
