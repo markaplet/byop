@@ -79,3 +79,9 @@ The following are considered known issues and I am working on solutions. They we
 * Occasionally players will fall in an endless loop and forced to reset to the start of the course using the carrot on a stick.
 * Occasionally the teleportation command will select the incorrect armor stand for the player and their position may be further back than they expected.
 * If players render distance is set too short, for the course, they cannot teleport back to the start of the course. This is caused when the armor stand for the start of the course gets unloaded. The solution is to keep the course contained to a reasonable distance from the start of the course.
+
+## Credit
+
+Give credit where credit is due:
+
+* [nigathan](http://www.minecraftforum.net/members/nigathan) - For help with player checkpoint logic.
