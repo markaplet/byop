@@ -34,15 +34,19 @@ Since this system relies on the barrier block, it is recommend that you set up a
 
 Download the byop functions and drop the `byop` folder into your world save folder under `[worldname]/data/functions/` It is important that the folder name be correct or the commands will not run. 
 
-In your world type the following command into chat. `/reload` 
+Some commands will only run for players tagged as an Admin. This prevents all players from receiving messages and course building eggs. To give yourself admin access, type the following command into chat:
 
-Then type `/function byop:start` to initialize the scoreboards and game mechanics 
+`/scoreboard players tag [PlayerName] add Admin`
+
+In your world type the following command into chat. `/reload` to make sure BYOP is recognized by Minecraft.
+
+To install BYOP type `/function byop:start`  into chat. The start function will initialize all the scoreboards needed to track players and start running the main game loop. 
 
 ### Function Commands
 
-`/function byop:reset` removes effects, start and ending markers
+`/function byop:reset` removes all course markers allowing you to start fresh.
 
-`/function byop:remove Removes the parkour system completly from your world and sets gamerules back to the defaults 
+`/function byop:remove` Removes the BYOP parkour system completly from your world and sets gamerules back to the defaults.
 
 `/function byop:help` Displays the in game help
 
@@ -55,9 +59,8 @@ The only rule to building a course is to ensure that any areas that players fall
 
 ### Set Course Markers
 
-When initialized, the game will give you some spawn eggs for setting the start of the course, the end of the course, as well as a handfull of effects like jump boost, speed, or blindness. Use them at the appropriate locations to set the your course how you want.  
+When initialized, the game will give players tagged with *Admin* spawn eggs used for setting the start of the course, the end of the course, as well as a handfull of effects like jump boost, speed, or blindness. Use them at the appropriate locations to set the your course how you want.  
 
-**Note: function gives all players marker eggs. So it's best to run setup with no other players on the server** 
 
 ### Carrot on a stick
 

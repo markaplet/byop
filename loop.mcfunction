@@ -25,3 +25,5 @@ function byop:player_checkpoint
 
 ## CONGRATULATE PLAYER
 function byop:winner
+
+#function djump:loop
