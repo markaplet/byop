@@ -4,7 +4,6 @@
 # Apply buffs
 # ----------------------------------------------------------------------
 
-
 ## PARKOUR SYSTEM INIT
 gamerule keepInventory true
 tellraw @a ["",{"text":"Set gamerule keepInventory to ","color":"gray"},{"text":"true","color":"green"}]
@@ -36,11 +35,6 @@ tellraw @a ["",{"text":"Set gamerule doWeatherCycle to ","color":"gray"},{"text"
 time set 6000
 tellraw @a ["",{"text":"Set time to ","color":"gray"},{"text":"6000","color":"yellow"}]
 
-
-## Success Message
-#tellraw @a ["",{"text":"===========================\n"},{"text":"   Parkour System Initialized!","color":"light_purple"},{"text":"\n"},{"text":"       v1.3 for mc 1.12","color":"gray"},{"text":"\n==========================="}]
-
-
 ## INIT SCOREBOARDS
 scoreboard objectives add id dummy Unique Player ID
 scoreboard objectives add onGround dummy
@@ -59,8 +53,7 @@ scoreboard objectives add parkourMaster dummy
 gamerule gameLoopFunction byop:loop
 
 # GIVE PLAYERS SPAWN EGGS
-function byop:markers
+function byop:markers_give
 
-#tellraw @a ["",{"text":"Parkour System v1.3","bold":true,"color":"green"},{"text":" ","bold":true},{"text":"has been installed!","bold":true,"color":"gold"},{"text":"\n"},{"text":"Command by:","color":"gray"},{"text":" "},{"text":"hogbits","color":"light_purple"},{"text":"\n"},{"text":"## -------------------//-------------------##","color":"dark_gray"},{"text":"\n"},{"text":"Construct your course from any material you wish. The only requirement is that a player must fall onto a ","color":"yellow"},{"text":"barrier block","underlined":true,"color":"aqua","clickEvent":{"action":"run_command","value":"/give @p minecraft:barrier"}},{"text":" to be considered out.","color":"yellow"},{"text":"\n"},{"text":"## -------------------//-------------------##","color":"dark_gray"},{"text":"\n"},{"text":"The course beginning and end are set by placing down an invisible armor stand using the appropriate spawn eggs. Course_Start and Course_End respectively","color":"yellow"}]
-
-tellraw @a ["",{"text":"Parkour System v1.3","bold":true,"color":"green"},{"text":" ","color":"light_purple"},{"text":"has been installed!","bold":true,"color":"gold"},{"text":"\n"},{"text":"Function by:","color":"gray"},{"text":" "},{"text":"hogbits","color":"light_purple"},{"text":"\n"},{"text":"## -------------------//-------------------##","color":"dark_gray"},{"text":"\n"},{"text":"Construct your course from any material you wish. Player must fall onto a ","color":"yellow"},{"text":"barrier block","underlined":true,"color":"aqua","clickEvent":{"action":"run_command","value":"/give @p minecraft:barrier"}},{"text":" to be considered out.","color":"yellow"},{"text":"\n"},{"text":"## -------------------//-------------------##","color":"dark_gray"},{"text":"\n"},{"text":"Use the appropriate ","color":"yellow"},{"text":"spawn eggs","color":"aqua","clickEvent":{"action":"run_command","value":"/function byop:markers"}},{"text":" to define the course start and end","color":"yellow"}]
+## TELL PLAYERS BOYP WAS INSTALLED
+tellraw @a ["",{"text":"Build Your Own Parkour","bold":true,"color":"green"},{"text":" ","color":"light_purple"},{"text":"has been installed!","bold":true,"color":"gold"},{"text":"\n"},{"text":"Function by:","color":"gray"},{"text":" "},{"text":"hogbits","color":"light_purple"},{"text":"\n"},{"text":"## -------------------//-------------------##","color":"dark_gray"},{"text":"\n"},{"text":"Construct your course from any material you wish. Player must fall onto a ","color":"yellow"},{"text":"barrier block","underlined":true,"color":"aqua","clickEvent":{"action":"run_command","value":"/give @p minecraft:barrier"}},{"text":" to be considered out.","color":"yellow"},{"text":"\n"},{"text":"## -------------------//-------------------##","color":"dark_gray"},{"text":"\n"},{"text":"Use the appropriate ","color":"yellow"},{"text":"spawn eggs","underlined":true,"color":"aqua","clickEvent":{"action":"run_command","value":"/function byop:markers_give"}},{"text":" to define the course start and end","color":"yellow"}]

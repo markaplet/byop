@@ -12,11 +12,11 @@ function byop:player_stuck
 
 
 ## SETUP COURSE START/END
-function byop:course_setup
+function byop:markers_setup
 
 
-## SCORE KEEPING
-execute @a ~ ~ ~ detect ~ ~-1 ~ minecraft:barrier 0 /scoreboard players add @a[c=1] respawns 1
+## COURSE EFFECTS
+function byop:course_effects
 
 
 ## CONTROL PLAYER CHECKPOINTS

@@ -3,6 +3,10 @@
 # Set continual checkpoints for successful jumps
 # ----------------------------------------------------------------------
 
+## SCORE KEEPING
+execute @a ~ ~ ~ detect ~ ~-1 ~ minecraft:barrier 0 /scoreboard players add @a[c=1] respawns 1
+
+## CHECKPOINTS
 scoreboard players tag @a[tag=onBarrier] remove onBarrier
 execute @a ~ ~ ~ detect ~ ~-1 ~ minecraft:barrier -1 scoreboard players tag @a[c=1] add onBarrier
 scoreboard players set @a onGround 0

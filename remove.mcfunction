@@ -34,11 +34,10 @@ effect @a clear
 scoreboard players reset *
 
 ## REMOVE MARKERS
-kill @e[type=armor_stand,name=courseStart]
-kill @e[type=armor_stand,name=courseEnd]
+function byop:markers_kill
 
 ## START GAME LOOP
 gamerule gameLoopFunction false
 
 ## TELL USER PARKOUR SYSTEM WAS REMOVED
-tellraw @a ["",{"text":"## -------------------//-------------------##","color":"dark_gray"},{"text":"\n"},{"text":"Parkour System v1.3","bold":true,"color":"green"},{"text":" "},{"text":"has been removed","bold":true,"color":"gold"},{"text":"\nrun "},{"text":"/function byop:init","color":"aqua","clickEvent":{"action":"run_command","value":"/function byop:start"}},{"text":" to reinstall\n"},{"text":"## -------------------//-------------------##","color":"dark_gray"}]
+tellraw @a ["",{"text":"## -------------------//-------------------##","color":"dark_gray"},{"text":"\n"},{"text":"Build Your Own Parkour","bold":true,"color":"green"},{"text":" "},{"text":"has been removed","bold":true,"color":"gold"},{"text":"\nrun "},{"text":"/function byop:start","color":"aqua","clickEvent":{"action":"run_command","value":"/function byop:start"}},{"text":" to reinstall\n"},{"text":"## -------------------//-------------------##","color":"dark_gray"}]
