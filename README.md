@@ -6,16 +6,17 @@ I created this module because I like parkour maps, but get annoyed when I have t
 
 With so many parkour maps available for download, I decided to make it work with most maps, then added some additional features to make a whole parkour system out of it. 
 
-## Parkour System
+## Build Your Own Parkour (BYOP) System
 
-This collection of functions does not build a parkour course structure for you. I guess you can say it's a BYOP (Build Your Own Parkour) system. Here is what it does: 
+This collection of functions does not build a parkour course structure for you. I guess you can say it's a BYOP (Build Your Own Parkour) system. Hence the name... Here is what it does: 
 
 * Provides a multiplayer scoring system
 * Adds checkpoint system when players make a successful jump
 * Teleportation of player on failed jumps
 * Reset level mechanic should players get stuck for any reason
 * Uses spawn eggs to mark the start and end points of the map
-* Optionally can apply common player buffs to prevent damage to player or map
+* Uses spawn eggs to mark effect areas (Jump, Speed, Blindness)
+* Optionally apply common player buffs to prevent damage to players or map (regeneration, weakness, etc)
 * It works well with most downloadable parkour maps
 * Can be used with any parkour map with slight modifications
 * Functions to completly uninstall system from world
@@ -23,40 +24,40 @@ This collection of functions does not build a parkour course structure for you. 
 
 ## Game Setup
 
-It seems that the currently popular trend in parkour is in a void world. While dropping players into the void is fun when it's not you being dropped into the void, it's less fun for players. This parkour system uses the minecraft:barrier block as a replacement for the void. When players fall from the course they land on the barrier block where they are teleported back to their last successful jump location. It's quick, it's painless, and more fun than spamming the respawn button.  
+It seems that the currently popular trend in parkour is in a void world. While dropping players into the void is fun when it's not you being dropped into the void, it's less fun for players. This parkour system uses the `minecraft:barrier` block as a replacement for the void. When players fall from the course they land on the barrier block where they are teleported back to their last successful jump location. It's quick, it's painless, and more fun than spamming the respawn button.  
 
 ### Custom Flat world
 
-Since this system relies on the barrier block, I recommend that you set up a new flat world with the following preset: **3;minecraft:barrier;127;** This will generate a flat world with only one layer of barrier blocks, thus giving you maximum build height and a foundation for which to build on without much effort.
+Since this system relies on the barrier block, it is recommend that you set up a new flat world with the following preset: **3;minecraft:barrier;127;** This will generate a flat world with only one layer of barrier blocks, thus giving you maximum build height and a foundation for which to build on without much effort.
 
 ### Installation
 
-Download the parkour functions and drop the `parkour` folder into your world save folder under `[worldname]/data/functions/` It is important that the folder name be correct or the commands will not run. 
+Download the byop functions and drop the `byop` folder into your world save folder under `[worldname]/data/functions/` It is important that the folder name be correct or the commands will not run. 
 
 In your world type the following command into chat. `/reload` 
 
-Then type `/function parkour:init` to initialize the scoreboards and game mechanics 
+Then type `/function byop:start` to initialize the scoreboards and game mechanics 
 
 ### Function Commands
 
-`/function parkour:reset` removes start and ending markers
+`/function byop:reset` removes effects, start and ending markers
 
-`/function parkour:reset_all` Removes the parkour system completly from your world and sets gamerules back to the defaults 
+`/function byop:remove Removes the parkour system completly from your world and sets gamerules back to the defaults 
 
-`/function parkour:help` Displays the in game help
+`/function byop:help` Displays the in game help
 
-`/function parkour:markers` Gives the spawn eggs that generate the start / end markers
+`/function byop:markers_give` Gives the spawn eggs that generate the markers
 
 
 ### Constructing your course
 
 The only rule to building a course is to ensure that any areas that players fall from contain barrier blocks below. Players do not have to fall on the 1 block layer as the floor of the world. You are free to build however you want. A void world is not required. The only requirement is that in order to teleport a player, they must land on a barrier block.
 
-### Set Course Start/End
+### Set Course Markers
 
-When initialized, the game will give players some spawn eggs for setting the start of the course and the end of the course. Use them at the appropriate locations to set the beginning and end of the course. Alternativly, you can rename any spawn egg to "Course_Start" and "Course_End". 
+When initialized, the game will give you some spawn eggs for setting the start of the course, the end of the course, as well as a handfull of effects like jump boost, speed, or blindness. Use them at the appropriate locations to set the your course how you want.  
 
-**Note: function gives all players eggs. So it's best to run setup with no other players on the server** 
+**Note: function gives all players marker eggs. So it's best to run setup with no other players on the server** 
 
 ### Carrot on a stick
 
@@ -66,11 +67,10 @@ If for any reason a player wishes to return to the beginnig of the course and st
 
 My plan for this tool is to update it with additional functionality and bug fixes as time and interest allows. So what is in store for future versions?
 
-* Convert all command blocks to 1.11
 * Timer mode. Allows players to race against a clock
 * Multi Course Support
-* Bonus effect mode. Different blocks produce different buffs like speed/jump boost
-* Course builder tools. Allows map makers to add special effects to blocks like moving platforms, launchers, bouncers, and wall run to name a few popular features requested.
+* ~~Bonus effects mode~~. Different blocks produce different buffs like speed/jump boost
+* ~~Course builder tools~~. Allows map makers to add special effects to blocks like moving platforms, launchers, bouncers, and wall run to name a few popular features requested.
 
 ## Known Issues
 
