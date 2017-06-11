@@ -42,5 +42,5 @@ gamerule gameLoopFunction false
 ## TELL USER PARKOUR SYSTEM WAS REMOVED
 tellraw @a[tag=Admin] {"text":"## -------------------//-------------------##","color":"dark_gray"}
 tellraw @a[tag=Admin] ["",{"text":"Build Your Own Parkour","color":"green"},{"text":" "},{"text":"has been removed","color":"gold"}]
-tellraw @a[tag=Admin] ["",{"text":"run "},{"text":"/function parkour:init","color":"aqua","clickEvent":{"action":"run_command","value":"/function parkour:init"}},{"text":" to reinstall"}]
+tellraw @a[tag=Admin] ["",{"text":"run "},{"text":"/function parkour:start","color":"aqua","clickEvent":{"action":"run_command","value":"/function parkour:start"}},{"text":" to reinstall"}]
 tellraw @a[tag=Admin] {"text":"## -------------------//-------------------##","color":"dark_gray"}
