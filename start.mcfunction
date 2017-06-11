@@ -52,8 +52,13 @@ scoreboard objectives add parkourMaster dummy
 ## START GAME LOOP
 gamerule gameLoopFunction byop:loop
 
-# GIVE PLAYERS SPAWN EGGS
+# GIVE SPAWN EGGS TO ADMIN
 function byop:markers_give
 
-## TELL PLAYERS BOYP WAS INSTALLED
-tellraw @a[tag=Admin] ["",{"text":"Build Your Own Parkour","bold":true,"color":"green"},{"text":" ","color":"light_purple"},{"text":"has been installed!","bold":true,"color":"gold"},{"text":"\n"},{"text":"Function by:","color":"gray"},{"text":" "},{"text":"hogbits","color":"light_purple"},{"text":"\n"},{"text":"## -------------------//-------------------##","color":"dark_gray"},{"text":"\n"},{"text":"Construct your course from any material you wish. Player must fall onto a ","color":"yellow"},{"text":"barrier block","underlined":true,"color":"aqua","clickEvent":{"action":"run_command","value":"/give @p minecraft:barrier"}},{"text":" to be considered out.","color":"yellow"},{"text":"\n"},{"text":"## -------------------//-------------------##","color":"dark_gray"},{"text":"\n"},{"text":"Use the appropriate ","color":"yellow"},{"text":"spawn eggs","underlined":true,"color":"aqua","clickEvent":{"action":"run_command","value":"/function byop:markers_give"}},{"text":" to define the course start and end","color":"yellow"}]
+## TELL ADMIN BOYP WAS INSTALLED
+tellraw @a[tag=Admin] {"text":"## -------------------//-------------------##","color":"dark_gray"}
+tellraw @a[tag=Admin] ["",{"text":"Build Your Own Parkour","color":"green"},{"text":" "},{"text":"has been installed!","color":"gold"}]
+tellraw @a[tag=Admin] ["",{"text":"Function by:","color":"gray"},{"text":" "},{"text":"hogbits","color":"light_purple"}]
+tellraw @a[tag=Admin] {"text":"## -------------------//-------------------##","color":"dark_gray"}
+tellraw @a[tag=Admin] ["",{"text":"Construct your course from any material you wish. Player must fall onto a "},{"text":"barrier block","underlined":true,"color":"aqua","clickEvent":{"action":"run_command","value":"/give @p minecraft:barrier"}},{"text":" to be considered out."}]
+tellraw @a[tag=Admin] ["",{"text":"Use the "},{"text":"marker spawn eggs","underlined":true,"color":"aqua","clickEvent":{"action":"run_command","value":"/function parkour:markers_give"}},{"text":" to define the course begining, end, along with special effects zones"}]

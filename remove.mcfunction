@@ -1,5 +1,5 @@
 # ----------------------------------------------------------------------
-# RESET ALL 
+# RESET ALL
 # Clears scoreboards, gamerules, course start and end markers
 # ----------------------------------------------------------------------
 
@@ -36,8 +36,11 @@ scoreboard players reset *
 ## REMOVE MARKERS
 function byop:markers_kill
 
-## START GAME LOOP
+## STOP GAME LOOP
 gamerule gameLoopFunction false
 
 ## TELL USER PARKOUR SYSTEM WAS REMOVED
-tellraw @a[tag=Admin] ["",{"text":"## -------------------//-------------------##","color":"dark_gray"},{"text":"\n"},{"text":"Build Your Own Parkour","bold":true,"color":"green"},{"text":" "},{"text":"has been removed","bold":true,"color":"gold"},{"text":"\nrun "},{"text":"/function byop:start","color":"aqua","clickEvent":{"action":"run_command","value":"/function byop:start"}},{"text":" to reinstall\n"},{"text":"## -------------------//-------------------##","color":"dark_gray"}]
+tellraw @a[tag=Admin] {"text":"## -------------------//-------------------##","color":"dark_gray"}
+tellraw @a[tag=Admin] ["",{"text":"Build Your Own Parkour","color":"green"},{"text":" "},{"text":"has been removed","color":"gold"}]
+tellraw @a[tag=Admin] ["",{"text":"run "},{"text":"/function parkour:init","color":"aqua","clickEvent":{"action":"run_command","value":"/function parkour:init"}},{"text":" to reinstall"}]
+tellraw @a[tag=Admin] {"text":"## -------------------//-------------------##","color":"dark_gray"}
