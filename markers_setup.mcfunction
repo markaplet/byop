@@ -3,7 +3,7 @@
 # Converts named entities to armor stands to mark start and end of course
 # ----------------------------------------------------------------------
 
-## COURSE START 
+## COURSE START
 execute @e[name=Course_Start] ~ ~ ~ summon minecraft:armor_stand ~ ~ ~ {CustomName:"courseStart",NoGravity:1b,Invisible:1,Invulnerable:1}
 tp @e[name=Course_Start] ~ ~-256 ~
 
@@ -24,5 +24,5 @@ execute @e[name=Speed_Boost] ~ ~ ~ summon minecraft:armor_stand ~ ~ ~ {CustomNam
 tp @e[name=Speed_Boost] ~ ~-256 ~
 
 ## BLINDNESS
-execute @e[name=Blind_Man] ~ ~ ~ summon minecraft:armor_stand ~ ~ ~ {CustomName:"blindness",NoGravity:1b,Invisible:1,Invulnerable:1}
-tp @e[name=Blind_Man] ~ ~-256 ~
+execute @e[name=Blindness] ~ ~ ~ summon minecraft:armor_stand ~ ~ ~ {CustomName:"blindness",NoGravity:1b,Invisible:1,Invulnerable:1}
+tp @e[name=Blindness] ~ ~-256 ~
