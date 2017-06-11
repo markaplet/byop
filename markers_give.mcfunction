@@ -24,7 +24,7 @@ give @a[tag=Admin] minecraft:spawn_egg 1 98 {display:{Name:"Speed_Boost",Lore:["
 ## SPEED BOOST III
 
 ## BLINDNESS
-give @a[tag=Admin] minecraft:spawn_egg 1 65 {display:{Name:"Blind_Man",Lore:["Blindness Marker"]},ench:[{id:0,lvl:1}],EntityTag:{id:"minecraft:bat"}}
+give @a[tag=Admin] minecraft:spawn_egg 1 65 {display:{Name:"Blindness",Lore:["Blindness Marker"]},ench:[{id:0,lvl:1}],EntityTag:{id:"minecraft:bat"}}
 
 ## REMOVE MARKER
-give @a[tag=Admin] minecraft:spawn_egg 1 93 {display:{Name:"Clear_Marker",Lore:["Removes unwanted markers"]},ench:[{id:0,lvl:1}],EntityTag:{id:"minecraft:chicken"}}
+give @a[tag=Admin] minecraft:spawn_egg 1 93 {display:{Name:"Clear_Marker",Lore:["Removes individual unwanted markers"]},ench:[{id:0,lvl:1}],EntityTag:{id:"minecraft:chicken"}}
