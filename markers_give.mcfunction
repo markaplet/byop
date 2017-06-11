@@ -26,5 +26,8 @@ give @a[tag=Admin] minecraft:spawn_egg 1 98 {display:{Name:"Speed_Boost",Lore:["
 ## BLINDNESS
 give @a[tag=Admin] minecraft:spawn_egg 1 65 {display:{Name:"Blindness",Lore:["Blindness Marker"]},ench:[{id:0,lvl:1}],EntityTag:{id:"minecraft:bat"}}
 
+## SLOWNESS
+give @a[tag=Admin] minecraft:spawn_egg 1 134 {display:{Name:"Slowness",Lore:["Slowness Marker"]},ench:[{id:0,lvl:1}],EntityTag:{id:"minecraft:mule"}}
+
 ## REMOVE MARKER
 give @a[tag=Admin] minecraft:spawn_egg 1 93 {display:{Name:"Clear_Marker",Lore:["Removes individual unwanted markers"]},ench:[{id:0,lvl:1}],EntityTag:{id:"minecraft:chicken"}}

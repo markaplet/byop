@@ -19,10 +19,14 @@ tp @e[name=Clear_Marker] ~ ~-256 ~
 execute @e[name=Jump_Boost] ~ ~ ~ summon minecraft:armor_stand ~ ~ ~ {CustomName:"jumpBoost",NoGravity:1b,Invisible:1,Invulnerable:1}
 tp @e[name=Jump_Boost] ~ ~-256 ~
 
-## JUMP BOOST
+## SPEED BOOST
 execute @e[name=Speed_Boost] ~ ~ ~ summon minecraft:armor_stand ~ ~ ~ {CustomName:"speedBoost",NoGravity:1b,Invisible:1,Invulnerable:1}
 tp @e[name=Speed_Boost] ~ ~-256 ~
 
 ## BLINDNESS
 execute @e[name=Blindness] ~ ~ ~ summon minecraft:armor_stand ~ ~ ~ {CustomName:"blindness",NoGravity:1b,Invisible:1,Invulnerable:1}
 tp @e[name=Blindness] ~ ~-256 ~
+
+## SLOWNESS
+execute @e[name=Slowness] ~ ~ ~ summon minecraft:armor_stand ~ ~ ~ {CustomName:"slowness",NoGravity:1b,Invisible:1,Invulnerable:1}
+tp @e[name=Slowness] ~ ~-256 ~
