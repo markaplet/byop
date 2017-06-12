@@ -1,14 +1,14 @@
 # Parkour MCFunctions
 
-Functions are brand new to Minecraft 1.12 and replace much of the previous need for command blocks. I created the original Parkour System for MC v1.10 then later 1.11 so naturally I had to update for 1.12 as well. 
+Functions are brand new to Minecraft 1.12 and replace much of the previous need for command blocks. I created the original Parkour System for MC v1.10 then later 1.11 so naturally I had to update for 1.12 as well.
 
-I created this module because I like parkour maps, but get annoyed when I have to restart the entire level when I failed to make a jump. I wanted a system that would teleport my player back to the location of last successful jump. 
+I created this module because I like parkour maps, but get annoyed when I have to restart the entire level when I failed to make a jump. I wanted a system that would teleport my player back to the location of last successful jump.
 
-With so many parkour maps available for download, I decided to make it work with most maps, then added some additional features to make a whole parkour system out of it. 
+With so many parkour maps available for download, I decided to make it work with most maps, then added some additional features to make a whole parkour system out of it.
 
 ## Build Your Own Parkour (BYOP) System
 
-This collection of functions does not build a parkour course structure for you. I guess you can say it's a BYOP (Build Your Own Parkour) system. Hence the name... Here is what it does: 
+This collection of functions does not build a parkour course structure for you. I guess you can say it's a BYOP (Build Your Own Parkour) system. Hence the name... Here is what it does:
 
 * Provides a multiplayer scoring system
 * Adds checkpoint system when players make a successful jump
@@ -19,7 +19,7 @@ This collection of functions does not build a parkour course structure for you. 
 * Optionally apply common player buffs to prevent damage to players or map (regeneration, weakness, etc)
 * It works well with most downloadable parkour maps
 * Can be used with any parkour map with slight modifications
-* Functions to completly uninstall system from world
+* Functions to completely uninstall system from world
 * No command blocks needed
 
 ## Game Setup
@@ -32,7 +32,7 @@ Since this system relies on the barrier block, it is recommend that you set up a
 
 ### Installation
 
-Download the byop functions and drop the `byop` folder into your world save folder under `[worldname]/data/functions/` It is important that the folder name be correct or the commands will not run. 
+Download the byop functions and drop the `byop` folder into your world save folder under `[worldname]/data/functions/` It is important that the folder name be correct or the commands will not run.
 
 Some commands will only run for players tagged as an Admin. This prevents all players from receiving messages and course building eggs. To give yourself admin access, type the following command into chat:
 
@@ -40,13 +40,13 @@ Some commands will only run for players tagged as an Admin. This prevents all pl
 
 In your world type the following command into chat. `/reload` to make sure BYOP is recognized by Minecraft.
 
-To install BYOP type `/function byop:start`  into chat. The start function will initialize all the scoreboards needed to track players and start running the main game loop. 
+To install BYOP type `/function byop:start`  into chat. The start function will initialize all the scoreboards needed to track players and start running the main game loop.
 
 ### Function Commands
 
 `/function byop:reset` removes all course markers allowing you to start fresh.
 
-`/function byop:remove` Removes the BYOP parkour system completly from your world and sets gamerules back to the defaults.
+`/function byop:remove` Removes the BYOP parkour system completely from your world and sets gamerules back to the defaults.
 
 `/function byop:help` Displays the in game help
 
@@ -59,12 +59,12 @@ The only rule to building a course is to ensure that any areas that players fall
 
 ### Set Course Markers
 
-When initialized, the game will give players tagged with *Admin* spawn eggs used for setting the start of the course, the end of the course, as well as a handfull of effects like jump boost, speed, or blindness. Use them at the appropriate locations to set the your course how you want.  
+When initialized, the game will give players tagged with *Admin* spawn eggs used for setting the start of the course, the end of the course, as well as a handful of effects like jump boost, speed, or blindness. Use them at the appropriate locations to set the your course how you want.  
 
 
 ### Carrot on a stick
 
-If for any reason a player wishes to return to the beginnig of the course and start over, for example they may want to improve their score, or they are stuck for any reason, right clicking with the carrot on a stick will return the player to the position marked as the start of the course.
+If for any reason a player wishes to return to the beginning of the course and start over, for example they may want to improve their score, or they are stuck for any reason, right clicking with the carrot on a stick will return the player to the position marked as the start of the course.
 
 ## Updates
 
