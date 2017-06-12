@@ -57,6 +57,8 @@ To install BYOP type `/function byop:start`  into chat. The start function will 
 
 The only rule to building a course is to ensure that any areas that players fall from contain barrier blocks below. Players do not have to fall on the 1 block layer as the floor of the world. You are free to build however you want. A void world is not required. The only requirement is that in order to teleport a player, they must land on a barrier block.
 
+If you don't have a parkour map already, there are some really fantastic maps available for free from sites like Planet Minecraft, Minecraft Maps, Minecraft Forums to name just a few. Alternatively, you can [download my testing course here](http://www.mediafire.com/file/dmqenxbcjore9lq/ParkourTestWorld.zip) if you would like to just test drive the system without much fuss.
+
 ### Set Course Markers
 
 When initialized, the game will give players tagged with *Admin* spawn eggs used for setting the start of the course, the end of the course, as well as a handful of effects like jump boost, speed, or blindness. Use them at the appropriate locations to set the your course how you want.  
