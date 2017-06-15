@@ -68,14 +68,23 @@ When initialized, the game will give players tagged with *Admin* spawn eggs used
 
 If for any reason a player wishes to return to the beginning of the course and start over, for example they may want to improve their score, or they are stuck for any reason, right clicking with the carrot on a stick will return the player to the position marked as the start of the course.
 
-## Updates
+## Roadmap and Updates
 
 My plan for this tool is to update it with additional functionality and bug fixes as time and interest allows. So what is in store for future versions?
 
 * Timer mode. Allows players to race against a clock
-* Multi Course Support
+* Multi Course Support (may already work, but have not tested)
 * ~~Bonus effects mode~~. Different blocks produce different buffs like speed/jump boost
-* ~~Course builder tools~~. Allows map makers to add special effects to blocks like moving platforms, launchers, bouncers, and wall run to name a few popular features requested.
+* ~~Course builder tools~~. Allows map makers to add special effects to blocks like:
+    - ~~Jump boost~~
+    - ~~Speed boost~~
+    - ~~Blindness~~
+    - ~~Slowness~~
+    - Moving platforms
+    - Launchers
+    - Bouncers
+    - Wall run
+    - Double jump
 
 ## Known Issues
 
